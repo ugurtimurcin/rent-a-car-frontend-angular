@@ -1,6 +1,21 @@
 <p>car works!</p>
 
-<ul *ngFor='let car of cars'>
-    <li>{{car.description}}</li>
-    <li>{{car.brand.name}}</li>
-</ul>
+<div class="container">
+    
+</div>
+<div *ngFor='let car of cars'>
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <ul >
+            <li>{{car.id}}</li>
+            <li>{{car.modelYear}}</li>
+            <li>{{car.dailyPrice}}</li>
+            <li>{{car.description}}</li>
+            <li>{{car.color}}</li>
+            <li>{{car.brand}}</li>
+        </ul>
+        </div>
+      </div>
+</div>
