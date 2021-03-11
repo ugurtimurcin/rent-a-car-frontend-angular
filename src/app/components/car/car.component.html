@@ -1,19 +1,14 @@
-<p>car works!</p>
 
 <div class="row">
   <div class="col-md-4" *ngFor='let car of cars'>
     <div class="card" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <ul >
-            <li>{{car.id}}</li>
-            <li>{{car.modelYear}}</li>
-            <li>{{car.dailyPrice}}</li>
-            <li>{{car.description}}</li>
-            <li>{{car.color}}</li>
-            <li>{{car.brand}}</li>
-        </ul>
+          <h5 class="text-center card-title">{{car.brand}}</h5>
+            <p><strong>ModelYear: </strong>{{car.modelYear}}</p>
+            <p><strong>Color: </strong>{{car.color}}</p>
+            <p><strong>Daily Price: </strong>{{car.dailyPrice}}</p>
+            <p><strong>Description</strong>{{car.description}}</p>
         </div>
       </div>
 </div>

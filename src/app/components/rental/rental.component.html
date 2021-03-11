@@ -1,4 +1,3 @@
-<p>rental works!</p>
 
 <div class="row">
   <div *ngFor="let rental of rentals">
@@ -6,15 +5,11 @@
       <div class="card" style="width: 18rem">
         <img src="..." class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <ul>
-            <li>{{ rental.id }}</li>
-            <li>{{ rental.rentDate }}</li>
-            <li>{{ rental.returnDate }}</li>
-            <li>{{ rental.firstName }}</li>
-            <li>{{ rental.lastName }}</li>
-            <li>{{ rental.carBrand }}</li>
-          </ul>
+          <h5 class="card-title">Rental Detail</h5>
+          <p><strong>Full Name: </strong>{{ rental.firstName }} {{ rental.lastName }}</p>
+            <p><strong>Rental Date: </strong>{{ rental.rentDate }}</p>
+            <p><strong>Return Date: </strong>{{ rental.returnDate }}</p>
+            <p><strong>Car Brand: </strong>{{ rental.carBrand }}</p>
         </div>
       </div>
     </div>
