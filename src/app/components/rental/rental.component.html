@@ -1,18 +1,22 @@
 <p>rental works!</p>
 
-<div *ngFor='let rental of rentals'>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+<div class="row">
+  <div *ngFor="let rental of rentals">
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem">
+        <img src="..." class="card-img-top" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
-          <ul >
-            <li>{{rental.id}}</li>
-            <li>{{rental.rentDate}}</li>
-            <li>{{rental.returnDate}}</li>
-            <li>{{rental.firstName}}</li>
-            <li>{{rental.lastName}}</li>
-            <li>{{rental.carBrand}}</li>
-        </ul>
+          <ul>
+            <li>{{ rental.id }}</li>
+            <li>{{ rental.rentDate }}</li>
+            <li>{{ rental.returnDate }}</li>
+            <li>{{ rental.firstName }}</li>
+            <li>{{ rental.lastName }}</li>
+            <li>{{ rental.carBrand }}</li>
+          </ul>
         </div>
       </div>
+    </div>
+  </div>
 </div>
