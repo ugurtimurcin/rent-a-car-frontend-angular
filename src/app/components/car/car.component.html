@@ -1,8 +1,8 @@
 
 <div class="row">
-    <div class="card mx-4 mb-2" style="width: 18rem;" *ngFor='let car of cars'>
-        <img class="card-img-top" alt="...">
-        <div class="card-body p-0">
+    <div class="card mx-4 mb-2 p-0" style="width: 18rem;" *ngFor='let car of cars'>
+        <img src="http://localhost:53224/CarImages/{{car.imagePath}}.jpg" class="card-img-top" alt="...">
+        <div class="card-body p-2">
           <h5 class="text-center card-title">{{car.brand}}</h5>
             <p><strong>ModelYear: </strong>{{car.modelYear}}</p>
             <p><strong>Color: </strong>{{car.color}}</p>
